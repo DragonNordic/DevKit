@@ -244,5 +244,66 @@ button {
   .nav__close-btn:hover {
     color: #000;
   }
+
+  .wrapper {
+    padding: 0 0.7rem;
+  }
+
+  .hero__item-1 {
+    padding-left: 0rem;
+  }
+  .hero__heading {
+    font-size: 35px;
+  }
+  .hero__btn--view-more {
+    width: 140px;
+    height: 55px;
+    font-size: 13.5px;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 3rem;
+  }
+
+  .hero__cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .hero__item-1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .hero__heading {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .hero__info-text {
+    font-size: 16px;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .hero__btn-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__item-2 {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__img-wrapper {
+    width: 350px;
+    height: 350px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

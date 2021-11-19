@@ -93,6 +93,110 @@ button {
 }
 
 /* ==== HEADER ==== */
+/* ==== HERO ==== */
+.hero__wrapper {
+  width: 100%;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+.hero__cols-2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.hero__item-1 {
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+}
+.hero__heading {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+}
+.hero__heading span {
+  color: #335eea;
+}
+.hero__info-text {
+  margin-top: 1.5rem;
+  font-size: 19px;
+  line-height: 28px;
+  color: #334157;
+}
+.hero__btn {
+  width: 110px;
+  height: 50px;
+  background-color: #335eea;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.hero__btn-wrapper {
+  margin-top: 3.5rem;
+  display: flex;
+  width: 100%;
+}
+.hero__btn:hover {
+  transform: translateY(-3px);
+  background-color: #2b50c7;
+}
+.hero__btn--view-more {
+  width: 180px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+}
+.hero__btn--view-more i {
+  margin-left: 0.7rem;
+}
+.hero__btn--view-more:hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.hero__btn--documentation {
+  width: 150px;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0;
+  background-color: #e1e7fc;
+  color: #0e2a86;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+}
+.hero__btn--documentation:hover {
+  background-color: #d7ddf1;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.hero__item-2 {
+  width: 100%;
+  height: 100%;
+}
+.hero__img-wrapper {
+  width: 500px;
+  min-width: 100%;
+  height: 440px;
+}
+.hero__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ==== HERO ==== */
 @media screen and (min-width: 768px) {
   .nav__toggle-btn {
     display: none;

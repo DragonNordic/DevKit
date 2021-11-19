@@ -378,6 +378,15 @@ footer {
             margin-right: 1rem;
         }
     }
+
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
+        &__featured-info p {
+            line-height: 23px;
+            font-size: 14px;
+        }
+    }
 }
 
 
@@ -416,7 +425,9 @@ footer {
         &__btn-wrapper {
             width: 100%;
             display: flex;
-            align-items: center;
+            align-.featured_info span {
+                font-size: 19px;
+              }items: center;
             justify-content: center;
         }
 
@@ -432,6 +443,10 @@ footer {
             width: 350px;
             height: 350px;
         }
+    }
+
+    .content__featured-info span {
+        font-size: 19px;
     }
 }  
 

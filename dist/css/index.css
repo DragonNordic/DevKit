@@ -311,6 +311,14 @@ footer {
     font-size: 13.5px;
     margin-right: 1rem;
   }
+
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .content__featured-info p {
+    line-height: 23px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 991px) {
   .wrapper {
@@ -341,8 +349,11 @@ footer {
   .hero__btn-wrapper {
     width: 100%;
     display: flex;
-    align-items: center;
+    items: center;
     justify-content: center;
+  }
+  .hero__btn-wrapper align-.featured_info span {
+    font-size: 19px;
   }
   .hero__item-2 {
     order: 1;
@@ -354,6 +365,10 @@ footer {
   .hero__img-wrapper {
     width: 350px;
     height: 350px;
+  }
+
+  .content__featured-info span {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=index.css.map */

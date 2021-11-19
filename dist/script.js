@@ -33,3 +33,36 @@ gsap.from(".nav__toggle-btn", {
   delay: 1.4,
   duration: 0.5,
 });
+
+/* ==== HEADER ==== */
+
+/* ==== HERO ==== */
+
+gsap.from(".hero__heading", {
+    opacity: 0,
+    y: 20,
+    delay: 2.4,
+    duration: 1,
+});
+  
+gsap.from(".hero__info-text", {
+    opacity: 0,
+    y: 20,
+    delay: 2.8,
+    duration: 1,
+});
+  
+gsap.from(".hero__btn-wrapper", {
+    opacity: 0,
+    y: 20,
+    delay: 2.8,
+    duration: 1,
+});
+
+gsap.from(".hero__img-wrapper img", {
+    opacity: 0,
+    y: 20,
+    delay: 3,
+    duration: 1,
+});
+  

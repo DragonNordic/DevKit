@@ -44,13 +44,135 @@ button {
 
 .container {
     width: 100%;
-  }
-  @media screen and (min-width: 1040px) {
+}
+
+@media screen and (min-width: 1040px) {
     .container {
       width: 1040px;
       margin: 0 auto;
     }
 }
 
+/* ==== HEADER ==== */
+
+.header {
+    height: $fixed-header-height;
+    padding: 0 1.7rem;
+}
+  
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo h2 {
+        font-size: 28px;
+        color: $primary-color;
+    }
+
+    &__menu-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 0 2rem;
+    }
+
+    &__link {
+        font-size: 16.5px;
+        line-height: 27px;
+        color: $link-color;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+
+        &:hover {
+            color: $primary-color; 
+        }
+    }
+
+    &__toggle-btn {
+        font-size: 20px;
+        font-weight: 600;
+        color: $lg-heading;
+        z-index: 4;
+    }
+}
+
+.nav__menu,
+.nav__close-btn {
+  display: none;
+}
+
+.show {
+  right: 3% !important;
+  display: block;
+}
+
+/* ==== HEADER ==== */
+
+@media screen and (min-width: 768px) {
+    .nav {
+        &__toggle-btn {
+            display: none;
+        }
+
+        &__menu {
+            display: block;
+        }
+    }
+}
+  
+@media screen and (max-width: 768px) {
+
+    .nav {
+        &__logo h2 {
+            font-size: 23px;
+        }
+
+        &__menu {
+            position: fixed;
+            width: 93%;
+            height: 100%;
+            display: block;
+            top: 2.5%;
+            right: -100%;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+            z-index: 50;
+            transition: 0.4s;
+
+            &-list {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 4rem;
+            }
+        }
+
+        &__item {
+            margin: 1rem 0;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+
+        &__close-btn {
+            display: block;
+            position: absolute;
+            right: 10%;
+            font-size: 25px;
+            color: #50689e;
+
+            &:hover {
+                color: #000;
+            }
+        }   
+    }
+}
 
 

@@ -238,6 +238,64 @@ button {
 
 /* ==== HERO ==== */
 
+/* ==== CONTENT ==== */
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+    padding: 1rem;
+
+    &__item {
+        height: 100%;
+    }
+
+    &__icon {
+        width: 100%;
+        line-height: 40px;
+    
+        & svg {
+            width: 30px;
+            height: 30px;
+            color: #6b85d8;        
+        }
+    }
+
+    &__featured-info {
+        width: 100%;
+
+        & span {
+            width: 100%;
+            display: block;
+            font-size: 21px;
+            line-height: 33px;
+            color: $lg-heading;
+        }
+
+        & p {
+            display: block;
+            width: 100%;
+            margin-top: 7px;
+            font-weight: 400;
+            color: #334157;
+            line-height: 25px;
+            font-size: 15.5px;
+        }
+    }
+}
+
+/* ==== CONTENT ==== */
+
+footer {
+    width: 100%;
+    background-color: $primary-color;
+    height: 12px;
+    margin-top: 8rem;
+}
+
 @media screen and (min-width: 768px) {
     .nav {
         &__toggle-btn {

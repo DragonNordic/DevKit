@@ -197,6 +197,56 @@ button {
 }
 
 /* ==== HERO ==== */
+/* ==== CONTENT ==== */
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+  padding: 1rem;
+}
+.content__item {
+  height: 100%;
+}
+.content__icon {
+  width: 100%;
+  line-height: 40px;
+}
+.content__icon svg {
+  width: 30px;
+  height: 30px;
+  color: #6b85d8;
+}
+.content__featured-info {
+  width: 100%;
+}
+.content__featured-info span {
+  width: 100%;
+  display: block;
+  font-size: 21px;
+  line-height: 33px;
+  color: #161c2d;
+}
+.content__featured-info p {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  font-weight: 400;
+  color: #334157;
+  line-height: 25px;
+  font-size: 15.5px;
+}
+
+/* ==== CONTENT ==== */
+footer {
+  width: 100%;
+  background-color: #335eea;
+  height: 12px;
+  margin-top: 8rem;
+}
+
 @media screen and (min-width: 768px) {
   .nav__toggle-btn {
     display: none;
